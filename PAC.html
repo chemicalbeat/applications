@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Pros and Cons List</title>
 	<style>
-		.pros {
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		h1 {
+			margin-bottom: 20px;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			border: 1px solid #ccc;
+			width: 400px;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		ul li {
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+			display: flex;
+			align-items: center;
+		}
+		ul li:last-child {
+			border-bottom: none;
+		}
+		ul li .icon {
+			margin-right: 10px;
+			font-size: 18px;
+		}
+		ul li .pro {
 			color: green;
 		}
-		.cons {
+		ul li .con {
 			color: red;
 		}
 	</style>
 </head>
 <body>
-	<h1>Pros and Cons List</h1>
-
-	<h2>Pros</h2>
-	<ul>
-		<li class="pros">Helps you make a decision</li>
-		<li class="pros">Organizes your thoughts</li>
-		<li class="pros">Encourages critical thinking</li>
-		<li class="pros">Gives you a clear picture of the situation</li>
-	</ul>
-
-	<h2>Cons</h2>
-	<ul>
-		<li class="cons">Can be time-consuming</li>
-		<li class="cons">May overlook important factors</li>
-		<li class="cons">Can be biased</li>
-		<li class="cons">Can be overwhelming</li>
-	</ul>
+	<div class="container">
+		<h1>Pros and Cons List</h1>
+		<ul>
+			<li><span class="icon pro">+</span> Pro 1</li>
+			<li><span class="icon pro">+</span> Pro 2</li>
+			<li><span class="icon con">-</span> Con 1</li>
+			<li><span class="icon con">-</span> Con 2</li>
+		</ul>
+	</div>
 </body>
 </html>
