@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greeting Application</title>
+</head>
+<body>
+	<h1>Greeting Application</h1>
+
+	<form>
+		<label for="name">Enter your name:</label>
+		<input type="text" id="name" name="name">
+		<input type="button" value="Submit" onclick="displayGreeting()">
+	</form>
+
+	<div id="greeting"></div>
+
+	<script>
+		function displayGreeting() {
+			var name = document.getElementById("name").value;
+			var greeting = "Hello, " + name + "!";
+			document.getElementById("greeting").innerHTML = greeting;
+		}
+	</script>
+</body>
+</html>
